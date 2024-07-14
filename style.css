@@ -1,0 +1,117 @@
+body {
+  background-color: rgb(45, 156, 132);
+}
+
+.ToDo {
+  width: 500px;
+  margin: 20px auto;
+  background-color: #c98e8e;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  position: fixed; 
+  top: 50%; 
+  left: 50px; 
+  transform: translateY(-50%); 
+  
+}  
+
+.finished {
+  width: 500px;
+  margin: 20px auto;
+  background-color: #c98e8e;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  position: fixed; 
+  top: 50%; 
+  left: 700px; 
+  transform: translateY(-50%); 
+}  
+
+
+input {
+  padding: 10px 30px;
+  background: transparent;
+  border-radius: 50px;
+}
+
+button {
+  padding: 10px 30px;
+  background-color: rgb(206, 95, 103);
+  border-radius: 50px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #695050;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  position: relative;
+  border-radius: 50px;
+  margin-bottom: 20px;
+  padding: 10px 30px;
+  background-color: rgb(176, 134, 182);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+li button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 14px;
+  padding: 10px 16px; 
+}
+
+li #edit {
+  right: 185px;
+}
+
+li #delete {
+  right: 100px;
+}
+
+li #finished,#finishedSectionDelete {
+  right: 0px;
+}
+
+form {
+  border-radius: 50px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+  background-color: rgb(91, 112, 126);
+  border: 1px solid #ccc;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 300px;
+  width: 100%;
+  text-align: center;
+}
+
+form input[type="text"] {
+  width: calc(100% - 20px);
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+}
+
+h1 {
+  text-align: center;
+  padding: 10px ;
+  color: #312711; 
+  background-color: #7fa182; 
+  border-radius: 6px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); 
+}
